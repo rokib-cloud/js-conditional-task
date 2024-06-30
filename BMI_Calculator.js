@@ -2,7 +2,9 @@
 
 BMI Calculator and Health Category
 
-Create a JavaScript program that calculates the Body Mass Index (BMI) and assigns a health category based on the BMI value. Use nested if-else statements to determine the health category.
+Create a JavaScript program that calculates the Body Mass Index (BMI) and assigns
+a health category based on the BMI value. 
+Use nested if-else statements to determine the health category.
 
     - Calculate BMI using the formula: BMI = weight (kg) / (height (m))^2
     - BMI < 18.5, you are underweight.
@@ -11,3 +13,20 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
     - Otherwise, you are obese.
 
 */
+
+const weight = 55;
+const height = 1.58496;
+const BMI = weight / (height*height);
+
+if(BMI < 18.5){
+    console.log('underweight');
+}
+else if(BMI >= 18.5 && BMI  <= 24.9){
+    console.log('normal')
+}
+else if(BMI >= 25 && BMI <= 29.9){
+    console.log('overweight')
+}
+else{
+    console.log('obese')
+}
